@@ -7,6 +7,11 @@
       "browserified.js"
     ]
   },
+  "dependencies": {
+    "js": [
+      "allex:templateslite:lib"
+    ]
+  },
   "protoboard": {
     "role":"web_component",
     "js_doc_filters": "^(src)"

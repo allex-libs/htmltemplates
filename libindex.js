@@ -156,6 +156,14 @@ function createLib (execilb, templatelib) {
     }
   );
 
+  var canvasmarkup = i(elementmarkup,
+    {
+      prereplacements: [{
+        TYPE: 'canvas'
+      }]
+    }
+  );
+
   var selectmarkup = i(elementmarkup,
     {
       prereplacements: [{
@@ -294,6 +302,14 @@ function createLib (execilb, templatelib) {
     }
   );
 
+  var fileinputmarkup = i(inputmarkup,
+    {
+      prereplacements: [{
+        TYPE: 'file'
+      }]
+    }
+  );
+
   return {
     element: elementmarkup,
     div: divmarkup,
@@ -314,6 +330,7 @@ function createLib (execilb, templatelib) {
     h4: h4markup,
     h5: h5markup,
     h6: h6markup,
+    canvas: canvasmarkup,
     select: selectmarkup,
     option: optionmarkup,
     ul: ulmarkup,
@@ -329,7 +346,8 @@ function createLib (execilb, templatelib) {
     emailinput: emailinputmarkup,
     phoneinput: phoneinputmarkup,
     passwordinput: passwordinputmarkup,
-    checkboxinput: checkboxinputmarkup
+    checkboxinput: checkboxinputmarkup,
+    fileinput: fileinputmarkup
   };
 }
 
