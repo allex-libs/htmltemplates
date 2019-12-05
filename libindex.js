@@ -159,8 +159,12 @@ function createLib (execilb, templatelib) {
   var selectmarkup = i(elementmarkup,
     {
       prereplacements: [{
-        TYPE: 'select' 
-      }]
+        TYPE: 'select',
+        ATTRS: 'name="NAME" ATTRS' 
+      }],
+      replacements: {
+        NAME: ''
+      }
     }
   );
 
