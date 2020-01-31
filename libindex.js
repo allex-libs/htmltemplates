@@ -50,6 +50,7 @@ function createLib (execilb, templatelib) {
     }
   );
 
+  /*
   var imgmarkup = i(elementmarkup,
     {
       prereplacements: [{
@@ -57,6 +58,14 @@ function createLib (execilb, templatelib) {
       }]
     }
   );
+  */
+  var imgmarkup = {
+    template: '\n<img class="CLASS" ATTRS >\n',
+    replacements: {
+      CLASS: '',
+      ATTRS: ''
+    }
+  };
 
   var fieldsetmarkup = i(elementmarkup,
     {
@@ -306,6 +315,14 @@ function createLib (execilb, templatelib) {
     }
   );
 
+  var radioinputmarkup = i(inputmarkup,
+    {
+      prereplacements: [{
+        TYPE: 'radio'
+      }]
+    }
+  );
+
   var fileinputmarkup = i(inputmarkup,
     {
       prereplacements: [{
@@ -351,6 +368,7 @@ function createLib (execilb, templatelib) {
     phoneinput: phoneinputmarkup,
     passwordinput: passwordinputmarkup,
     checkboxinput: checkboxinputmarkup,
+    radioinput: radioinputmarkup,
     fileinput: fileinputmarkup
   };
 }
