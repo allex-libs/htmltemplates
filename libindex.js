@@ -250,11 +250,12 @@ function createLib (execilb, templatelib) {
   );
 
   var textareamarkup = {
-    template: '\n<textarea name="NAME" class="CLASS" ATTRS />\n',
+    template: '\n<textarea name="NAME" class="CLASS" ATTRS>CONTENTS</textarea>\n',
     replacements: {
       CLASS: '',
       ATTRS: '',
-      NAME: ''
+      NAME: '',
+      CONTENTS: ''
     }
   };
 
