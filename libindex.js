@@ -5,7 +5,7 @@ function createLib (execilb, templatelib) {
     o = templatelib.override;
 
   var elementmarkup = {
-    template: '\n<TYPE class="CLASS" ATTRS>\nCONTENTS\n</TYPE>\n',
+    template: '<TYPE class="CLASS" ATTRS>CONTENTS</TYPE>',
     replacements: {
       CLASS: '',
       CONTENTS: '',
