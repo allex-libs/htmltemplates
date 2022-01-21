@@ -332,6 +332,17 @@ function createLib (execilb, templatelib) {
     }
   );
 
+
+  var iframemarkup = i(elementmarkup,
+    {
+      prereplacements: [{
+        TYPE: 'iframe',
+        ATTRS: 'src="TARGET" ATTRS'
+      }]
+    }
+  );
+
+
   return {
     element: elementmarkup,
     div: divmarkup,
@@ -370,7 +381,8 @@ function createLib (execilb, templatelib) {
     passwordinput: passwordinputmarkup,
     checkboxinput: checkboxinputmarkup,
     radioinput: radioinputmarkup,
-    fileinput: fileinputmarkup
+    fileinput: fileinputmarkup,
+    iframe: iframemarkup
   };
 }
 
