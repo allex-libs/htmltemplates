@@ -280,6 +280,14 @@ function createLib (execilb, templatelib) {
     }
   );
 
+  var searchinputmarkup = i(inputmarkup,
+    {
+      prereplacements: [{
+        TYPE: 'search'
+      }]
+    }
+  );
+
   var numberinputmarkup = i(inputmarkup,
     {
       prereplacements: [{
@@ -379,6 +387,7 @@ function createLib (execilb, templatelib) {
     nav: navmarkup,
     textarea : textareamarkup,
     textinput: textinputmarkup,
+    searchinput: searchinputmarkup,
     numberinput: numberinputmarkup,
     emailinput: emailinputmarkup,
     phoneinput: phoneinputmarkup,

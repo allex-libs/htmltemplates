@@ -1,6 +1,6 @@
 {
   "name": "allex_htmltemplateslib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AllexJS templates for HTML elements, based on allex_templateslitelib",
   "main": "index.js",
   "scripts": {
